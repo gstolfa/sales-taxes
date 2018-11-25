@@ -5,10 +5,7 @@ import com.stolfa.salestaxes.model.Item;
 import com.stolfa.salestaxes.service.ShoppingService;
 import com.stolfa.salestaxes.util.ItemBuilder;
 
-public class Application {
-
-	//https://www.petrikainulainen.net/programming/testing/writing-clean-tests-java-8-to-the-rescue/
-	
+public class Application {	
 	public static void main(String[] args) {
 		
 		Item item_1 = new ItemBuilder()
@@ -42,9 +39,7 @@ public class Application {
 			.createItem(); 
 		
 		Basket basket = ShoppingService.getBasket().addItem(item_1).addItem(item_2).addItem(item_3);
-		System.out.println(" input 1 ------------------------------------- ");
 		System.out.println(ShoppingService.getRecipe(basket));
-
 
 		Item item_4 = new ItemBuilder()
 				.with($ ->{
@@ -70,7 +65,6 @@ public class Application {
 				.createItem(); 
 
 		basket = ShoppingService.getBasket().addItem(item_4).addItem(item_5);
-		System.out.println(" input 2 ------------------------------------- ");
 		System.out.println(ShoppingService.getRecipe(basket));
 		
 		Item item_6 = new ItemBuilder()
@@ -114,24 +108,8 @@ public class Application {
 					$.price = 11.25;
 				})
 				.createItem(); 	
-		
-		
+			
 		basket = ShoppingService.getBasket().addItem(item_6).addItem(item_7).addItem(item_8).addItem(item_9);
-		System.out.println(" input 3 ------------------------------------- ");
 		System.out.println(ShoppingService.getRecipe(basket));
-
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
 	}
-
 }
