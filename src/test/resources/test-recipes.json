@@ -1,0 +1,89 @@
+{
+	"data": [
+		{
+			"test-name":"input_1",
+			"item.count":3,
+			
+			"item_1.isImported": false,
+			"item_1.isExemptTax": true,
+			"item_1.quantity": 1,
+			"item_1.name": "book",
+			"item_1.price": 12.49,
+			"item_1.expected.price": 12.49,
+
+			"item_2.isImported": false,
+			"item_2.isExemptTax": false,
+			"item_2.quantity": 1,
+			"item_2.name": "music CD",
+			"item_2.price": 14.99,
+			"item_2.expected.price": 16.49,
+
+			"item_3.isImported": false,
+			"item_3.isExemptTax": true,
+			"item_3.quantity": 1,
+			"item_3.name": "chocolate bar",
+			"item_3.price": 0.85,
+			"item_3.expected.price": 0.85,
+
+			"expected.totalCost":"29.83",
+			"expected.totalTaxesAmount":"1.50"
+		},
+		{
+			"test-name":"input_2",
+			"item.count":2,
+			
+			"item_1.isImported": true,
+			"item_1.isExemptTax": true,
+			"item_1.quantity": 1,
+			"item_1.name": "imported box of chocolates",
+			"item_1.price": 10.00,
+			"item_1.expected.price": 10.50,
+
+			"item_2.isImported": true,
+			"item_2.isExemptTax": false,
+			"item_2.quantity": 1,
+			"item_2.name": "imported bottle of perfume",
+			"item_2.price": 47.50,
+			"item_2.expected.price": 54.65,
+
+			"expected.totalTaxesAmount":"7.65",
+			"expected.totalCost":"65.15"
+		},
+		{
+			"test-name":"input_3",
+			"item.count":4,
+
+			"item_1.isImported": true,
+			"item_1.isExemptTax": false,
+			"item_1.quantity": 1,
+			"item_1.name": "imported bottle of perfume",
+			"item_1.price": 27.99,
+			"item_1.expected.price": 32.19,
+
+			"item_2.isImported": false,
+			"item_2.isExemptTax": false,
+			"item_2.quantity": 1,
+			"item_2.name": "bottle of perfume",
+			"item_2.price": 18.99,
+			"item_2.expected.price": 20.89,
+
+			"item_3.isImported": false,
+			"item_3.isExemptTax": true,
+			"item_3.quantity": 1,
+			"item_3.name": "packet of headache pills",
+			"item_3.price": 9.75,
+		    "item_3.expected.price": 9.75,
+
+			"item_4.isImported": true,
+			"item_4.isExemptTax": true,
+			"item_4.quantity": 1,
+			"item_4.name": "box of imported chocolates",
+			"item_4.price": 11.25,
+			"item_4.expected.price": 11.85,
+
+			"expected.totalCost":"74.68",
+			"expected.totalTaxesAmount":"6.70"
+		}		
+			
+	]
+}

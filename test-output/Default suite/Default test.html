@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 25 22:15:51 CET 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (94 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.stolfa.salestaxes.service.ShoppingServiceTest.testRecipes()'><b>testRecipes</b><br>Test class: com.stolfa.salestaxes.service.ShoppingServiceTest<br>Parameters: {"item_1.quantity":1,"item_2.name":"music CD","item_2.price":14.99,"item_3.isExemptTax":true,"test-name":"input_1","item_3.expected.price":0.85,"item_3.price":0.85,"item_1.name":"book","item_1.expected.price":12.49,"item_1.isExemptTax":true,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":false,"item_1.isImported":false,"item.count":3,"item_3.quantity":1,"item_3.name":"chocolate bar","expected.totalCost":"29.83","item_1.price":12.49,"item_2.expected.price":16.49,"expected.totalTaxesAmount":"1.50","item_3.isImported":false}</td>
+<td></td>
+<td>0</td>
+<td>com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab</td></tr>
+<tr>
+<td title='com.stolfa.salestaxes.service.ShoppingServiceTest.testRecipes()'><b>testRecipes</b><br>Test class: com.stolfa.salestaxes.service.ShoppingServiceTest<br>Parameters: {"item_1.quantity":1,"item_2.name":"imported bottle of perfume","item_2.price":47.5,"test-name":"input_2","item_1.name":"imported box of chocolates","item_1.expected.price":10.5,"item_1.isExemptTax":true,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":true,"item_1.isImported":true,"item.count":2,"expected.totalCost":"65.15","item_1.price":10,"item_2.expected.price":54.65,"expected.totalTaxesAmount":"7.65"}</td>
+<td></td>
+<td>0</td>
+<td>com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab</td></tr>
+<tr>
+<td title='com.stolfa.salestaxes.service.ShoppingServiceTest.testRecipes()'><b>testRecipes</b><br>Test class: com.stolfa.salestaxes.service.ShoppingServiceTest<br>Parameters: {"item_2.name":"bottle of perfume","item_3.isExemptTax":true,"item_4.isExemptTax":true,"test-name":"input_3","item_3.expected.price":9.75,"item_3.price":9.75,"item_1.isExemptTax":false,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":false,"item_1.isImported":true,"item.count":4,"item_4.expected.price":11.85,"item_3.quantity":1,"expected.totalCost":"74.68","item_1.quantity":1,"item_2.price":18.99,"item_4.quantity":1,"item_4.isImported":true,"item_1.name":"imported bottle of perfume","item_1.expected.price":32.19,"item_4.name":"box of imported chocolates","item_4.price":11.25,"item_3.name":"packet of headache pills","item_1.price":27.99,"item_2.expected.price":20.89,"expected.totalTaxesAmount":"6.70","item_3.isImported":false}</td>
+<td></td>
+<td>0</td>
+<td>com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab</td></tr>
+</table><p>
+</body>
+</html>
