@@ -5,4 +5,5 @@
 | Test framework | TestNg |
 
 Test class to run: ShoppingServiceTest.java
+
 Data provider: test-recipes.json
