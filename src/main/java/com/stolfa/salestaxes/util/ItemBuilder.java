@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 import com.stolfa.salestaxes.model.Item;
 
 public class ItemBuilder {
-	
+
 	public Integer quantity;
 	public Boolean isImported = false;
 	public Boolean isExemptTax = false;

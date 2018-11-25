@@ -5,7 +5,8 @@ import com.stolfa.salestaxes.model.Item;
 import com.stolfa.salestaxes.service.ShoppingService;
 import com.stolfa.salestaxes.util.ItemBuilder;
 
-public class Application {	
+public class Application {
+	
 	public static void main(String[] args) {
 		
 		Item item_1 = new ItemBuilder()
@@ -108,8 +109,11 @@ public class Application {
 					$.price = 11.25;
 				})
 				.createItem(); 	
-			
+		
+		
 		basket = ShoppingService.getBasket().addItem(item_6).addItem(item_7).addItem(item_8).addItem(item_9);
 		System.out.println(ShoppingService.getRecipe(basket));
+
 	}
+
 }
