@@ -3,11 +3,14 @@ package com.stolfa.salestaxes;
 import com.stolfa.salestaxes.model.Basket;
 import com.stolfa.salestaxes.model.Item;
 import com.stolfa.salestaxes.service.ShoppingService;
+import com.stolfa.salestaxes.service.impl.ShoppingServiceImpl;
 import com.stolfa.salestaxes.util.ItemBuilder;
 
 public class Application {
 	
 	public static void main(String[] args) {
+		
+		ShoppingService service = new ShoppingServiceImpl();
 		
 		Item item_1 = new ItemBuilder()
 			.with($ ->{
@@ -39,8 +42,8 @@ public class Application {
 			})
 			.createItem(); 
 		
-		Basket basket = ShoppingService.getBasket().addItem(item_1).addItem(item_2).addItem(item_3);
-		System.out.println(ShoppingService.getRecipe(basket));
+		Basket basket = service.getBasket().addItem(item_1).addItem(item_2).addItem(item_3);
+		System.out.println(service.getRecipe(basket));
 
 		Item item_4 = new ItemBuilder()
 				.with($ ->{
@@ -65,8 +68,8 @@ public class Application {
 				})
 				.createItem(); 
 
-		basket = ShoppingService.getBasket().addItem(item_4).addItem(item_5);
-		System.out.println(ShoppingService.getRecipe(basket));
+		basket = service.getBasket().addItem(item_4).addItem(item_5);
+		System.out.println(service.getRecipe(basket));
 		
 		Item item_6 = new ItemBuilder()
 				.with($ ->{
@@ -111,8 +114,8 @@ public class Application {
 				.createItem(); 	
 		
 		
-		basket = ShoppingService.getBasket().addItem(item_6).addItem(item_7).addItem(item_8).addItem(item_9);
-		System.out.println(ShoppingService.getRecipe(basket));
+		basket = service.getBasket().addItem(item_6).addItem(item_7).addItem(item_8).addItem(item_9);
+		System.out.println(service.getRecipe(basket));
 
 	}
 

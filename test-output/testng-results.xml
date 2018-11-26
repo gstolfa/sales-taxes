@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67" started-at="2018-11-25T21:33:48Z" finished-at="2018-11-25T21:33:48Z">
+  <suite name="Default suite" duration-ms="103" started-at="2018-11-26T08:52:11Z" finished-at="2018-11-26T08:52:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67" started-at="2018-11-25T21:33:48Z" finished-at="2018-11-25T21:33:48Z">
+    <test name="Default test" duration-ms="103" started-at="2018-11-26T08:52:11Z" finished-at="2018-11-26T08:52:11Z">
       <class name="com.stolfa.salestaxes.service.ShoppingServiceTest">
-        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab]" name="testRecipes" duration-ms="52" started-at="2018-11-25T22:33:48Z" data-provider="test-recipes" finished-at="2018-11-25T22:33:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="setUp" is-config="true" duration-ms="0" started-at="2018-11-26T09:52:11Z" finished-at="2018-11-26T09:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="testRecipes" duration-ms="79" started-at="2018-11-26T09:52:11Z" data-provider="test-recipes" finished-at="2018-11-26T09:52:11Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +22,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRecipes -->
-        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab]" name="testRecipes" duration-ms="0" started-at="2018-11-25T22:33:48Z" data-provider="test-recipes" finished-at="2018-11-25T22:33:48Z">
+        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="testRecipes" duration-ms="0" started-at="2018-11-26T09:52:11Z" data-provider="test-recipes" finished-at="2018-11-26T09:52:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"item_2.name":"bottle of perfume","item_3.isExemptTax":true,"item_4.isExemptTax":true,"test-name":"input_3","item_3.expected.price":9.75,"item_3.price":9.75,"item_1.isExemptTax":false,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":false,"item_1.isImported":true,"item.count":4,"item_4.expected.price":11.85,"item_3.quantity":1,"expected.totalCost":"74.68","item_1.quantity":1,"item_2.price":18.99,"item_4.quantity":1,"item_4.isImported":true,"item_1.name":"imported bottle of perfume","item_1.expected.price":32.19,"item_4.name":"box of imported chocolates","item_4.price":11.25,"item_3.name":"packet of headache pills","item_1.price":27.99,"item_2.expected.price":20.89,"expected.totalTaxesAmount":"6.70","item_3.isImported":false}]]>
+                <![CDATA[{"item_1.quantity":1,"item_2.name":"imported bottle of perfume","item_2.price":47.5,"test-name":"input_2","item_1.name":"imported box of chocolates","item_1.expected.price":10.5,"item_1.isExemptTax":true,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":true,"item_1.isImported":true,"item.count":2,"expected.totalCost":"65.15","item_1.price":10,"item_2.expected.price":54.65,"expected.totalTaxesAmount":"7.65"}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRecipes -->
-        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@396a51ab]" name="testRecipes" duration-ms="0" started-at="2018-11-25T22:33:48Z" data-provider="test-recipes" finished-at="2018-11-25T22:33:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="setUp" is-config="true" duration-ms="0" started-at="2018-11-26T09:52:11Z" finished-at="2018-11-26T09:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="setUp" is-config="true" duration-ms="0" started-at="2018-11-26T09:52:11Z" finished-at="2018-11-26T09:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRecipes(org.json.JSONObject)[pri:0, instance:com.stolfa.salestaxes.service.ShoppingServiceTest@7c0e2abd]" name="testRecipes" duration-ms="0" started-at="2018-11-26T09:52:11Z" data-provider="test-recipes" finished-at="2018-11-26T09:52:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"item_1.quantity":1,"item_2.name":"imported bottle of perfume","item_2.price":47.5,"test-name":"input_2","item_1.name":"imported box of chocolates","item_1.expected.price":10.5,"item_1.isExemptTax":true,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":true,"item_1.isImported":true,"item.count":2,"expected.totalCost":"65.15","item_1.price":10,"item_2.expected.price":54.65,"expected.totalTaxesAmount":"7.65"}]]>
+                <![CDATA[{"item_2.name":"bottle of perfume","item_3.isExemptTax":true,"item_4.isExemptTax":true,"test-name":"input_3","item_3.expected.price":9.75,"item_3.price":9.75,"item_1.isExemptTax":false,"item_2.isExemptTax":false,"item_2.quantity":1,"item_2.isImported":false,"item_1.isImported":true,"item.count":4,"item_4.expected.price":11.85,"item_3.quantity":1,"expected.totalCost":"74.68","item_1.quantity":1,"item_2.price":18.99,"item_4.quantity":1,"item_4.isImported":true,"item_1.name":"imported bottle of perfume","item_1.expected.price":32.19,"item_4.name":"box of imported chocolates","item_4.price":11.25,"item_3.name":"packet of headache pills","item_1.price":27.99,"item_2.expected.price":20.89,"expected.totalTaxesAmount":"6.70","item_3.isImported":false}]]>
               </value>
             </param>
           </params>
